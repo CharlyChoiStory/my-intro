@@ -532,22 +532,20 @@ body.nav-open { overflow: hidden; }
     aspect-ratio: 3/4;
     border-radius: 10px;
     margin-bottom: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 16px;
-    font-size: .8rem;
-    font-weight: 700;
-    color: #fff;
-    line-height: 1.4;
+    overflow: hidden;
     box-shadow: 4px 4px 16px rgba(0,0,0,.25);
+    background: #1f2937;
 }
-.cov-1 { background: linear-gradient(135deg, #1f2937 0%, #374151 100%); }
-.cov-2 { background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 100%); }
-.cov-3 { background: linear-gradient(135deg, #0f0f0f 0%, #1f2937 100%); }
-.cov-4 { background: linear-gradient(135deg, #c2410c 0%, #ea580c 100%); }
-.cov-5 { background: linear-gradient(135deg, #134e4a 0%, #0f766e 100%); }
+.book-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform .3s ease;
+}
+.book-card:hover .book-cover img {
+    transform: scale(1.05);
+}
 
 .book-badge {
     font-size: .68rem;
@@ -918,35 +916,45 @@ body.nav-open { overflow: hidden; }
         <h2 class="sec-title">출판 <span class="hl">도서</span></h2>
         <div class="books-grid">
             <div class="card book-card">
-                <div class="book-cover cov-1">Mastering ChatGPT-4<br>Prompt for Writers</div>
+                <div class="book-cover">
+                    <img src="1.png" alt="Mastering ChatGPT-4 Prompts for Writers">
+                </div>
                 <span class="book-badge">🇺🇸 EN · AMAZON KDP · 2024</span>
-                <h4 class="book-title">ChatGPT 프롬프트 엔지니어링 마스터</h4>
+                <h4 class="book-title">Mastering ChatGPT-4 Prompts for Writers</h4>
                 <p class="book-pub">Amazon KDP · 영어</p>
                 <a href="#" class="btn btn-outline">구매 링크</a>
             </div>
             <div class="card book-card">
-                <div class="book-cover cov-2">Claude AI<br>For Writers &amp; Professionals</div>
+                <div class="book-cover">
+                    <img src="2.png" alt="Claude AI for Writers & Professionals">
+                </div>
                 <span class="book-badge">🇺🇸 EN · AMAZON KDP</span>
                 <h4 class="book-title">Claude AI for Writers &amp; Professionals</h4>
                 <p class="book-pub">Amazon KDP · 영어</p>
                 <a href="#" class="btn btn-outline">구매 링크</a>
             </div>
             <div class="card book-card">
-                <div class="book-cover cov-3">Perplexity AI<br>完全制覇</div>
+                <div class="book-cover">
+                    <img src="3.png" alt="Perplexity AI 완전 정복">
+                </div>
                 <span class="book-badge">🇯🇵 JP · AMAZON KDP JAPAN</span>
                 <h4 class="book-title">Perplexity AI 완전 정복</h4>
                 <p class="book-pub">Amazon KDP Japan · 일본어</p>
                 <a href="#" class="btn btn-outline">구매 링크</a>
             </div>
             <div class="card book-card">
-                <div class="book-cover cov-4">클로드 AI<br>글쓰기</div>
+                <div class="book-cover">
+                    <img src="4.png" alt="클로드 AI 글쓰기">
+                </div>
                 <span class="book-badge">🇰🇷 KR · 국내 출판사</span>
                 <h4 class="book-title">클로드 AI 글쓰기</h4>
                 <p class="book-pub">프리렉 · 한국어</p>
                 <a href="#" class="btn btn-outline">구매 링크</a>
             </div>
             <div class="card book-card">
-                <div class="book-cover cov-5">XRP,<br>흔들리지 않는<br>투자자의 선택</div>
+                <div class="book-cover">
+                    <img src="5.png" alt="XRP, 흔들리지 않는 투자자의 선택">
+                </div>
                 <span class="book-badge">🇰🇷 KR · 부크크</span>
                 <h4 class="book-title">XRP, 흔들리지 않는 투자자의 선택</h4>
                 <p class="book-pub">부크크 · 한국어</p>
